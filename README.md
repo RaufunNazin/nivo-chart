@@ -2,7 +2,11 @@
 
 ## Getting Started
 
-Next.js project with Nivo charts ready for use. To run it
+Next.js project with Nivo charts ready for use.
+
+Full tutorial on : https://learnjsx.com/category/4/posts/nextjs-nivo
+
+To run it
 
 Install dependencies and start dev server:
 

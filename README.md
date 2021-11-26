@@ -2,7 +2,9 @@
 
 ## Getting Started
 
-First, run the development server:
+Next.js project with Nivo charts ready for use. To run it
+
+Install dependencies and start dev server:
 
 ```bash
 npm i 

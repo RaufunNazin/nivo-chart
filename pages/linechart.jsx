@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import LineChart from "./components/line";
 
 const Chart = () => {
@@ -70,8 +71,11 @@ const Chart = () => {
     },
   ];
   return (
-    <div className="h-96 m-4">
-      <LineChart data={lines} />
+    <div>
+      <Navbar active="line" />
+      <div className="h-96 m-4">
+        <LineChart data={lines} />
+      </div>
     </div>
   );
 };

@@ -1,34 +1,31 @@
 import { ResponsiveBar } from "@nivo/bar";
 
-const MyResponsiveBar = ({ data, chartName }) => (
+const MyResponsiveBar = ({
+  data,
+  chartName,
+  bottomLegend,
+  leftLegend,
+  valueScale,
+  padding,
+  marginTop,
+  marginBottom,
+  marginLeft,
+  marginRight,
+  indexBy,
+}) => (
   <ResponsiveBar
     data={data.data}
-    indexBy="name"
-    margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
-    padding={0.3}
-    valueScale={{ type: "linear" }}
+    indexBy={indexBy}
+    margin={{
+      top: marginTop,
+      right: marginRight,
+      bottom: marginBottom,
+      left: marginLeft,
+    }}
+    padding={padding}
+    valueScale={{ type: `${valueScale}` }}
     indexScale={{ type: "band", round: true }}
     colors={(bar) => bar.data.color}
-    defs={[
-      {
-        id: "dots",
-        type: "patternDots",
-        background: "inherit",
-        color: "#38bcb2",
-        size: 4,
-        padding: 1,
-        stagger: true,
-      },
-      {
-        id: "lines",
-        type: "patternLines",
-        background: "inherit",
-        color: "#eed312",
-        rotation: -45,
-        lineWidth: 6,
-        spacing: 10,
-      },
-    ]}
     borderColor={{
       from: "color",
       modifiers: [["darker", 1.6]],
@@ -39,7 +36,7 @@ const MyResponsiveBar = ({ data, chartName }) => (
       tickSize: 5,
       tickPadding: 5,
       tickRotation: 0,
-      legend: `${data.chartName}@10`,
+      legend: `${bottomLegend}@10`,
       legendPosition: "middle",
       legendOffset: 32,
     }}
@@ -47,7 +44,7 @@ const MyResponsiveBar = ({ data, chartName }) => (
       tickSize: 5,
       tickPadding: 5,
       tickRotation: 0,
-      legend: "value",
+      legend: `${leftLegend}`,
       legendPosition: "middle",
       legendOffset: -40,
     }}
@@ -58,7 +55,7 @@ const MyResponsiveBar = ({ data, chartName }) => (
       modifiers: [["darker", 1.6]],
     }}
     role="chart"
-    ariaLabel={`${data.chartName}`}
+    ariaLabel={`${chartName}`}
   />
 );
 

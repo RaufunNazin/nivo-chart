@@ -65,10 +65,22 @@ const Chart = () => {
   ];
   return (
     <div className="grid grid-cols-3 h-screen m-4">
-      {data.map((datas) => {
+      {data.map((bar, i) => {
         return (
-          <div>
-            <BarChart data={datas} />
+          <div key={i}>
+            <BarChart
+              data={bar} // object
+              indexBy="name" // string (object property)
+              chartName={bar.chartName} // string
+              leftLegend="value" // string
+              bottomLegend={bar.chartName} // string
+              valueScale="linear" // linear or symlog
+              padding={0.3} // number
+              marginTop={50} // number
+              marginBottom={50} // number
+              marginLeft={60} // number
+              marginRight={130} // number
+            />
           </div>
         );
       })}

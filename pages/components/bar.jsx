@@ -30,6 +30,30 @@ const MyResponsiveBar = ({
       from: "color",
       modifiers: [["darker", 1.6]],
     }}
+    legends={[
+      {
+        dataFrom: "indexes",
+        anchor: "bottom-right",
+        direction: "column",
+        justify: false,
+        translateX: 120,
+        translateY: 0,
+        itemsSpacing: 2,
+        itemWidth: 100,
+        itemHeight: 20,
+        itemDirection: "left-to-right",
+        itemOpacity: 0.85,
+        symbolSize: 20,
+        effects: [
+          {
+            on: "hover",
+            style: {
+              itemOpacity: 1,
+            },
+          },
+        ],
+      },
+    ]}
     axisTop={null}
     axisRight={null}
     axisBottom={{

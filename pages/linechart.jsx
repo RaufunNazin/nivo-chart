@@ -74,7 +74,22 @@ const Chart = () => {
     <div>
       <Navbar active="line" />
       <div className="h-96 m-4">
-        <LineChart data={lines} />
+        <LineChart
+          data={lines}
+          xScale="point" // point or linear
+          yScale="linear" // point or linear
+          legendPosition="bottom-right" // string
+          legendSymbol="square" // string
+          legendDirection="column" // column or row
+          leftLegend="value" // string
+          bottomLegend="Date" // string
+          marginTop={50} // number
+          marginBottom={50} // number
+          marginLeft={60} // number
+          marginRight={130} // number
+          stacked={true} // boolean
+          pointSize={10} // number
+        />
       </div>
     </div>
   );

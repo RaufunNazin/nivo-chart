@@ -22,8 +22,8 @@ Open [http://localhost:3000/barchart](http://localhost:3000/barchart) or [http:/
 
 ### BarChart
 
-![Bar Chart](https://drive.google.com/file/d/106CUmfxe2ILz-eVhTRa9-ZTtyNAbJm6r/view?usp=sharing "Bar Chart")
+![Bar Chart](./screenshots/barchart.png "Bar Chart")
 
 ### LineChart
 
-![Line Chart](https://drive.google.com/file/d/1KG1CIbE_PGvHyh7Q0Sdq3jwpLDf-SzKw/view?usp=sharing "Line Chart")
+![Line Chart](./screenshots/linechart.png "Line Chart")

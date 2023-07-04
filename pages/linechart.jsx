@@ -52,7 +52,7 @@ const Chart = () => {
   return (
     <div>
       <Navbar active="line" />
-      <div className="h-96 m-4">
+      <div className="h-96 m-4 border ">
         <LineChart
           data={lines}
           xScale="point" // point or linear

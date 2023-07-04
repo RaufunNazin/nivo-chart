@@ -67,10 +67,10 @@ const Chart = () => {
   return (
     <div>
       <Navbar active="bar" />
-      <div className="grid grid-cols-3 my-auto h-96 m-4">
+      <div className="grid grid-cols-3 gap-x-2 my-auto h-96 m-4">
         {data.map((bar, i) => {
           return (
-            <div key={i}>
+            <div key={i} className="border">
               <BarChart
                 data={bar} // object
                 indexBy="name" // string (object property)

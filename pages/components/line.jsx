@@ -35,7 +35,7 @@ const MyResponsiveLine = ({
     axisTop={null}
     axisRight={null}
     axisBottom={{
-      tickSize: 5,
+      tickSize: 0,
       tickPadding: 5,
       tickRotation: 0,
       legend: `${bottomLegend}`,
@@ -43,7 +43,7 @@ const MyResponsiveLine = ({
       legendPosition: "middle",
     }}
     axisLeft={{
-      tickSize: 5,
+      tickSize: 0,
       tickPadding: 5,
       tickRotation: 0,
       legend: `${leftLegend}`,

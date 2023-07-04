@@ -57,7 +57,7 @@ const MyResponsiveBar = ({
     axisTop={null}
     axisRight={null}
     axisBottom={{
-      tickSize: 5,
+      tickSize: 0,
       tickPadding: 5,
       tickRotation: 0,
       legend: `${bottomLegend}`,
@@ -65,7 +65,7 @@ const MyResponsiveBar = ({
       legendOffset: 32,
     }}
     axisLeft={{
-      tickSize: 5,
+      tickSize: 0,
       tickPadding: 5,
       tickRotation: 0,
       legend: `${leftLegend}`,

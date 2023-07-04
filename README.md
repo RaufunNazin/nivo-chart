@@ -1,4 +1,4 @@
-## Implementation of BarChart and LineChart using Nivo
+## Implementation of BarChart and LineChart using Nivo Chart library
 
 Next.js project with Nivo charts ready for use.
 
@@ -20,12 +20,10 @@ yarn dev
 
 Open [http://localhost:3000/barchart](http://localhost:3000/barchart) or [http://localhost:3000/linechart](http://localhost:3000/linechart) with your browser to see the charts.
 
-### Usage
+### BarChart
 
-Barchart : 
+![Bar Chart](https://drive.google.com/file/d/106CUmfxe2ILz-eVhTRa9-ZTtyNAbJm6r/view?usp=sharing "Bar Chart")
 
-Import <BarChart/> component from "@/components/bar"
+### LineChart
 
-
-![Alt text](https://i.imgur.com/qKKNifC_d.webp?maxwidth=520&shape=thumb&fidelity=high "Optional title")
-
+![Line Chart](https://drive.google.com/file/d/1KG1CIbE_PGvHyh7Q0Sdq3jwpLDf-SzKw/view?usp=sharing "Line Chart")
